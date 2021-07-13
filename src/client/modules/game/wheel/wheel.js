@@ -66,12 +66,4 @@ export default class Wheel extends LightningElement {
             : event.clientY;
         this.dragging = true;
     }
-
-    /*componentDIDUPdate(){
-        let selectedPosition = -(this.props.selected - 1) * 80
-    
-        if (!this.dragging && this.state.position !== selectedPosition) {
-            this.setState({ position: selectedPosition })
-        }
-    }*/
 }

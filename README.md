@@ -1,11 +1,15 @@
-# trading-cards
+# TypeShift game built using Lightning Web Components
 
-Here will be some information about the app.
+[TypeShift](https://en.wikipedia.org/wiki/TypeShift) is a word puzzle video game in which the player must spell out words by sliding letters in columns (by sliding the columns up and down). I've used [Lightning Web Components](https://lwc.dev) to build a version of this game, which you can play using the link below.  
 
-## How to start?
+## How to play?
 
-Start simple by running `yarn watch` (or `npm run watch`, if you set up the project with `npm`). This will start the project with a local development server.
+Navigate to [this Heroku App](https://typeshift-lwc.herokuapp.com/). Use any of the game code(s) below to start playing.
 
-The source files are located in the [`src`](./src) folder. All web components are within the [`src/client/modules`](./src/modules) folder. The folder hierarchy also represents the naming structure of the web components. The entry file for the custom Express configuration can be found in the ['src/server'](./src/server) folder.
+1. Game Codes for Level 1 (Find first/last names of popular CEOs): `ceo1`, `ceo2`.
+1. Game Codes for Level 2 (Find country names): `country1`, `country2`.
+1. Game Codes for Level 3 (Find Salesforce terms): `sf1`, `sf2`.
 
-Find more information on the main repo on [GitHub](https://github.com/muenzpraeger/create-lwc-app).
+## Credits
+
+User experience inspired by [this CodePen](https://codepen.io/bk_av/pen/wxebKd)

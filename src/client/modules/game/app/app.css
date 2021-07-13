@@ -100,6 +100,7 @@ button {
 .word {
     margin-bottom: 40px;
     animation: popout 0.5s;
+    letter-spacing: 3px;
 }
 
 .center-column {
@@ -113,6 +114,10 @@ button {
 .align-center {
     text-align: center;
     margin-top: 10%;
+}
+
+.text-align-center{
+    text-align: center;
 }
 
 .size_3-of-12 {
