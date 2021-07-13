@@ -1,0 +1,12 @@
+<template>
+    <template if:true={dataloaded}>
+        <game-app game-obj={gameObj}></game-app>
+    </template>
+    <template if:false={dataloaded}>
+        <div class="container">
+            <input class="gamecode" />
+            <br />
+            <button class="button" onclick={validateGameKey}>Enter</button>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <div
+        class="dragdealer year"
+        onmousedown={handleMouseDown}
+        onmousemove={handleMouseMove}
+        onmouseup={handleMouseUp}
+    >
+        <ul class="handle" style={inlineStyle}>
+            <template if:true={letters}>
+                <template for:each={letters} for:item="letter">
+                    <li key={letter}>{letter}</li>
+                </template>
+            </template>
+        </ul>
+    </div>
+</template>

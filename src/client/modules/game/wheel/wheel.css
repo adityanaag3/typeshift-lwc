@@ -1,0 +1,54 @@
+.day,
+.month,
+.year {
+    position: relative;
+    height: 80px;
+    margin: 0px;
+    border-radius: 0;
+    text-align: center;
+    margin-right: 2px;
+}
+
+.day:before,
+.month:before,
+.year:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(81, 37, 255, 0.38);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.day:before,
+.month:before,
+.year:before {
+    top: 0;
+}
+
+.day li,
+.month li,
+.year li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #e6ecff;
+    font-family: 'Neutraface';
+    cursor: grab;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}

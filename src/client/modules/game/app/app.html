@@ -1,0 +1,42 @@
+<template>
+    <div class="flex-grid">
+        <div class="col">
+            <div class="center">
+                <div class="date-picker">
+                    <template if:false={gameOver}>
+                        <template if:true={gameObj.letterGroups}>
+                            <template
+                                for:each={gameObj.letterGroups}
+                                for:item="letterGroup"
+                                for:index="index"
+                            >
+                                <game-wheel
+                                    key={letterGroup.id}
+                                    letters={letterGroup.letters}
+                                    onletterselected={handleSelectedLetter}
+                                    position={index}
+                                ></game-wheel>
+                            </template>
+                        </template>
+                    </template>
+                    <template if:true={gameOver}>
+                        🎉 🎉 🎉 <br/>
+                        You've found all the words in {duration} seconds.
+                    </template>
+                </div>
+            </div>
+        </div>
+        <div class="col border">
+            <div class="center center-column">
+                <button onclick={validateWord}>Verify</button>
+                <div class="flex-grid flex-wrap words">
+                    <template for:each={foundWords} for:item="word">
+                        <div key={word} class="col word size_3-of-12">
+                            {word}
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
