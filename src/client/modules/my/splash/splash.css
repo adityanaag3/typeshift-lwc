@@ -51,3 +51,7 @@ button {
         transform: translate3d(6px, 0, 0);
     }
 }
+
+img{
+    max-width: 256px;
+}

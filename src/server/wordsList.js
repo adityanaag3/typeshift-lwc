@@ -62,6 +62,15 @@ const wordsList = [
             { id: 4, letters: ['L', 'N', 'Y'] },
             { id: 5, letters: ['A', 'E'] }
         ]
+    },
+    {
+        id: 'example',
+        words: ['AGE', 'ACE', 'ACT', 'DOT', 'DOG'],
+        letterGroups: [
+            { id: 1, letters: ['A', 'D'] },
+            { id: 2, letters: ['G', 'C', 'O'] },
+            { id: 3, letters: ['G', 'T', 'E'] }
+        ]
     }
 ];
 

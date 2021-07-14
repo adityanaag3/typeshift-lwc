@@ -18,6 +18,13 @@ export default class App extends LightningElement {
         return '';
     }
 
+    get totalWords(){
+        if(this.gameObj && this.gameObj.words){
+            return (this.gameObj.words.length - this.foundWords.length) + ' words remaining';
+        }
+        return '';
+    }
+
     connectedCallback() {
         if (this.gameObj && this.gameObj.letterGroups) {
             this.gameObj.letterGroups.forEach((element) => {

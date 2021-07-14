@@ -6,9 +6,16 @@
 
 Navigate to [this Heroku App](https://typeshift-lwc.herokuapp.com/). Use any of the game code(s) below to start playing.
 
+1. Get familiar with the game and controls: `example`.
 1. Game Codes for Level 1 (Find first/last names of popular CEOs): `ceo1`, `ceo2`.
 1. Game Codes for Level 2 (Find country names): `country1`, `country2`.
 1. Game Codes for Level 3 (Find Salesforce terms): `sf1`, `sf2`.
+
+Slide the columns, and once you think you found a word, click on **Check Word**.
+
+## Roadmap
+
+Multi-player and leaderboard coming soon!
 
 ## Credits
 

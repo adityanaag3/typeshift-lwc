@@ -30,7 +30,10 @@
         </div>
         <div class="col border">
             <div class="center center-column">
-                <button onclick={validateWord}>Verify</button>
+                <div class="totalWords">
+                    {totalWords}
+                </div>
+                <button onclick={validateWord}>Check Word</button>
                 <div class="flex-grid flex-wrap words">
                     <template for:each={foundWords} for:item="word">
                         <div key={word} class="col word size_3-of-12">
