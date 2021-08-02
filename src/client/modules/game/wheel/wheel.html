@@ -4,6 +4,9 @@
         onmousedown={handleMouseDown}
         onmousemove={handleMouseMove}
         onmouseup={handleMouseUp}
+        ontouchend={handleMouseUp}
+        ontouchmove={handleMouseMove}
+        ontouchstart={handleMouseDown}
     >
         <ul class="handle" style={inlineStyle}>
             <template if:true={letters}>

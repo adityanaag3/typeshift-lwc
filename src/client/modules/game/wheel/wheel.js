@@ -25,6 +25,8 @@ export default class Wheel extends LightningElement {
 
     handleMouseMove(event) {
         if (this.dragging) {
+            event.preventDefault();
+            
             let clientY = event.touches
                 ? event.touches[0].clientY
                 : event.clientY;
@@ -61,6 +63,7 @@ export default class Wheel extends LightningElement {
     }
 
     handleMouseDown(event) {
+        event.preventDefault();
         this.previousY = event.touches
             ? event.touches[0].clientY
             : event.clientY;
