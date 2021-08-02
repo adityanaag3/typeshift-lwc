@@ -55,3 +55,9 @@ button {
 img{
     max-width: 256px;
 }
+
+.credits{
+    margin-top:30px;
+    line-height: 25px;
+    text-align: center;
+}
