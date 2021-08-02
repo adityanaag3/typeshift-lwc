@@ -28,20 +28,6 @@
     border-left: 1px dotted gray;
 }
 
-@media (max-width: 425px){
-    .center{
-        height: 57vh;
-    }
-
-    .center .date-picker {
-        zoom: 80%;
-    }
-
-    .border {
-        border-left: none;
-    }
-}
-
 .center .date {
     font-size: 30px;
     font-weight: 300;
@@ -143,4 +129,26 @@ button {
 .totalWords{
     font-size: 1.5rem;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 425px){
+    .center{
+        height: 57vh;
+    }
+
+    .center .date-picker {
+        zoom: 80%;
+    }
+
+    .border {
+        border-left: none;
+    }
+
+    .size_3-of-12{
+        width: 30%;
+    }
+
+    .col {
+        flex: auto;
+    }
 }
