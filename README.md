@@ -15,7 +15,7 @@ Slide the columns, and once you think you found a word, click on **Check Word**.
 
 ## Roadmap
 
-Multi-player and leaderboard coming soon!
+Multi-player and leaderboard coming soon! Contributions welcome!
 
 ## Credits
 
