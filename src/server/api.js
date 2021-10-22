@@ -60,7 +60,6 @@ app.get('/api/getletters', (req, res) => {
 app.post('/api/savescore', (req, res) => {
     if(LEADERBOARD_URL){
         // Post Scores to external service
-        req.body.game_id = 'typeshift';
         fetch(LEADERBOARD_URL + '/insertscore', {
             method: 'POST',
             headers: {
