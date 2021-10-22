@@ -22,7 +22,7 @@
                     <template if:true={gameOver}>
                         <div class="text-align-center">
                             🎉 🎉 🎉 <br/>
-                            You've found all the words in {duration} seconds.
+                            Your score is {score}.
                         </div>
                     </template>
                 </div>
@@ -30,6 +30,10 @@
         </div>
         <div class="col border">
             <div class="center center-column">
+                <my-timer
+                    duration-in-seconds={totalSeconds}
+                    seconds-left={secondsLeft}
+                ></my-timer>
                 <div class="totalWords">
                     {totalWords}
                 </div>

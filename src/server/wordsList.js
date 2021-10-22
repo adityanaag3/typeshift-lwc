@@ -71,6 +71,15 @@ const wordsList = [
             { id: 2, letters: ['G', 'C', 'O'] },
             { id: 3, letters: ['G', 'T', 'E'] }
         ]
+    },
+    {
+        id: 'anzday1',
+        words: ['AGE', 'ACE', 'ACT', 'DOT', 'DOG'],
+        letterGroups: [
+            { id: 1, letters: ['A', 'D'] },
+            { id: 2, letters: ['G', 'C', 'O'] },
+            { id: 3, letters: ['G', 'T', 'E'] }
+        ]
     }
 ];
 

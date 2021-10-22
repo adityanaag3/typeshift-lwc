@@ -5,6 +5,9 @@ export default class Splash extends LightningElement {
     dataloaded = false;
     buttonEle;
 
+    disabled = false;
+    buttonLabel = 'Start Game';
+
     renderedCallback() {
         if (!this.buttonEle) {
             this.buttonEle = this.template.querySelector('.button');
@@ -13,15 +16,24 @@ export default class Splash extends LightningElement {
 
     validateGameKey() {
         const gamekey = this.template.querySelector('.gamecode').value;
-        if (gamekey && gamekey.trim().length > 0) {
-            fetch('/api/getletters?id=' + gamekey)
+        const playername = this.template.querySelector('.playername').value;
+        if (gamekey && gamekey.trim().length > 0 && playername && playername.trim().length > 0) {
+            this.disabled = true;
+            this.buttonLabel = 'Please wait...';
+            localStorage.setItem('player_name', playername);
+            fetch('/api/getletters?id=' + encodeURIComponent(gamekey) + '&player_name=' + encodeURIComponent(playername))
                 .then((response) => response.json())
                 .then((data) => {
-                    if (data.length > 0) {
-                        this.gameObj = data[0];
+                    if(data.player_id){
+                        localStorage.setItem('player_id', data.player_id);
+                    }
+                    if (data.wordsList.length > 0) {
+                        this.gameObj = data.wordsList[0];
                         this.dataloaded = true;
                     } else {
                         this.buttonEle.classList.add('animate');
+                        this.disabled = false;
+                        this.buttonLabel = 'Start Game';
                         setTimeout(() => {
                             this.buttonEle.classList.remove('animate');
                         }, 1000);
@@ -29,6 +41,8 @@ export default class Splash extends LightningElement {
                 });
         } else {
             this.buttonEle.classList.add('animate');
+            this.disabled = false;
+            this.buttonLabel = 'Start Game';
             setTimeout(() => {
                 this.buttonEle.classList.remove('animate');
             }, 1000);

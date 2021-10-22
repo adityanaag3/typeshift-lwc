@@ -6,7 +6,8 @@
     "dependencies": {
         "compression": "^1.7.4",
         "express": "^4.17.1",
-        "helmet": "^4.6.0"
+        "helmet": "^4.6.0",
+        "node-fetch": "^3.0.0"
     },
     "devDependencies": {
         "eslint": "7.30.0",

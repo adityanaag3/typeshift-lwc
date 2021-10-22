@@ -13,10 +13,6 @@ Navigate to [this Heroku App](https://typeshift-lwc.herokuapp.com/). Use any of 
 
 Slide the columns, and once you think you found a word, click on **Check Word**.
 
-## Roadmap
-
-Multi-player and leaderboard coming soon! Contributions welcome!
-
 ## Credits
 
 User experience inspired by [this CodePen](https://codepen.io/bk_av/pen/wxebKd)

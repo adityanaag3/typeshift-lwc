@@ -129,6 +129,7 @@ button {
 .totalWords{
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 @media (max-width: 425px){
