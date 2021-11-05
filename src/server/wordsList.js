@@ -73,12 +73,27 @@ const wordsList = [
         ]
     },
     {
-        id: 'anzday1',
-        words: ['AGE', 'ACE', 'ACT', 'DOT', 'DOG'],
+        id: 'anz-test',
+        words: ['LOCKER', 'RENDER', 'LINTER', 'THREAD', 'METHOD', 'MODULE'],
         letterGroups: [
-            { id: 1, letters: ['A', 'D'] },
-            { id: 2, letters: ['G', 'C', 'O'] },
-            { id: 3, letters: ['G', 'T', 'E'] }
+            { id: 1, letters: ['L', 'R', 'T', 'M'] },
+            { id: 2, letters: ['E', 'O', 'H', 'I', 'E'] },
+            { id: 3, letters: ['N', 'C', 'D', 'R', 'T'] },
+            { id: 4, letters: ['D', 'K', 'T', 'E', 'U', 'H'] },
+            { id: 5, letters: ['E', 'O', 'A', 'L'] },
+            { id: 6, letters: ['R', 'E', 'D'] }
+        ]
+    },
+    {
+        id: 'anz21',
+        words: ['LOCKER', 'RENDER', 'LINTER', 'THREAD', 'METHOD', 'MODULE'],
+        letterGroups: [
+            { id: 1, letters: ['L', 'R', 'T', 'M'] },
+            { id: 2, letters: ['E', 'O', 'H', 'I', 'E'] },
+            { id: 3, letters: ['N', 'C', 'D', 'R', 'T'] },
+            { id: 4, letters: ['D', 'K', 'T', 'E', 'U', 'H'] },
+            { id: 5, letters: ['E', 'O', 'A', 'L'] },
+            { id: 6, letters: ['R', 'E', 'D'] }
         ]
     }
 ];
