@@ -45,7 +45,7 @@ export default class App extends LightningElement {
             const d = new Date();
             this.startTimestamp = d.getTime();
             this.player_id = localStorage.getItem('player_id');
-            this.playername = localStorage.getItem('playername');
+            this.playername = localStorage.getItem('player_name');
             this.countDown = setInterval(() => {
                 this.secondsLeft--;
                 if (this.secondsLeft === 0) {
